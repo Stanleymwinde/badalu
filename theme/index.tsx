@@ -1,7 +1,8 @@
 import { extendTheme } from "@chakra-ui/react";
 import { Epilogue } from "next/font/google";
+
 const epilogue = Epilogue({
-  weight: ["600", "700", "800", "900"],
+  weight: ["400", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -42,6 +43,31 @@ export const theme = extendTheme({
         "linear-gradient(173deg, rgba(222,56,48,1) 38%, rgba(254,190,16,1) 90%)",
 
       bg: "#F5F5F4",
+    },
+    primary: {
+      100: "#CEF7FC",
+      200: "#9EEAF9",
+      300: "#6CD0EE",
+      400: "#46B2DE",
+      500: "#1288C9",
+      600: "#0D6AAC",
+      700: "#094F90",
+      800: "#053874",
+      900: "#032860",
+      default: "#1288C9",
+    },
+
+    secondary: {
+      100: "#FEF8D5",
+      200: "#FDEFAB",
+      300: "#F9E181",
+      400: "#F4D361",
+      500: "#EEBE2F",
+      600: "#CC9D22",
+      700: "#AB7E17",
+      800: "#8A610E",
+      900: "#724C09",
+      default: "#EEBE2F",
     },
   },
 });
