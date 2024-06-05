@@ -5,7 +5,7 @@ const CTA = () => {
   return (
     <Stack
       bgImage="/global/cta.jpeg"
-      h="75vh"
+      h="55vh"
       bgSize="cover"
       pt="3rem"
       bgPos={{ base: "40% 50%", sm: "50% 30%" }}

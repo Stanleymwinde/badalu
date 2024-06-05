@@ -108,3 +108,18 @@ export const FooterSocialData = [
     text: "Instagram",
   },
 ];
+
+export const serviceData = [
+  {
+    imageUrl: "https://randomfox.ca/images/42.jpg",
+    heading: "Badalu Home Care School",
+    excerpt:
+      "Written by Audrey Masitsa Emma was arrested and charged with hawking without a license. The married mother of two headed into town hoping to sell a few of her wares to provide for her family. Little did she know that this day wouldn’t turn out as she had hoped. Caught...",
+  },
+  {
+    imageUrl: "https://randomfox.ca/images/45.jpg",
+    heading: "Badalu Workers Agency",
+    excerpt:
+      "Written by Audrey Masitsa Betty Khaguhia is a businesswoman and formerly imprisoned woman, a title she embraced upon completing the Ufunuo Program on the Outside earlier this year.  “I will now wear the title of formerly imprisoned women with pride because I’m no...",
+  },
+];
