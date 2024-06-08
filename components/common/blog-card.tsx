@@ -13,7 +13,14 @@ import React from "react";
 const BlogCard = () => {
   return (
     <Stack borderRadius="xl" overflow="hidden" boxShadow="md">
-      <Box maxH="20rem">
+      <Box
+        maxH="20rem"
+        _hover={{
+          "& img": {
+            transform: "scale(1.05)",
+          },
+        }}
+      >
         <Image
           src="https://randomfox.ca/images/22.jpg"
           width={400}
@@ -23,6 +30,7 @@ const BlogCard = () => {
             width: "100%",
             height: "100%",
             objectFit: "cover",
+            transition: "transform 0.2s ease",
           }}
         />
       </Box>

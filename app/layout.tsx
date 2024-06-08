@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 
 import { Providers } from "./providers";
 import NextTopLoader from "nextjs-toploader";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NextTopLoader />
         <Providers>
+          <Navbar />
           {children}
           <Footer />
         </Providers>

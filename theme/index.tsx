@@ -69,5 +69,11 @@ export const theme = extendTheme({
       900: "#724C09",
       default: "#EEBE2F",
     },
+    schemeblue: {
+      100: "#D4EDF6",
+      200: "#ACD8ED",
+      300: "#77ABCB",
+      400: "#497698",
+    },
   },
 });

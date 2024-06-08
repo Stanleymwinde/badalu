@@ -44,7 +44,7 @@ const HomeAbout = () => {
               borderRadius="lg"
               border=".5rem solid var(--chakra-colors-brand-white)"
               boxShadow=".2rem .2rem 2rem var(--chakra-colors-brand-black)"
-              src="https://res-console.cloudinary.com/ddjlqr6qt/thumbnails/v1/image/upload/v1716815529/aG9tZS1hYm91dF9xcWZtZnk=/drilldown"
+              src="https://randomfox.ca/images/35.jpg"
               alt="badalu cover"
               objectFit="cover"
               height={{ base: "300px", md: "500px" }}
