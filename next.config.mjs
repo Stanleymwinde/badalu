@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["randomfox.ca"],
+    domains: ["randomfox.ca", "templatekit.jegtheme.com"],
   },
 };
 

@@ -8,15 +8,17 @@ import { Box } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <Box as="main" overflow={"hidden"}>
-      <HeroSection />
-      <HomeAbout />
-      <HomeServices />
-      <Brands />
-      <OurCeo />
-      <Testimonials />
-      <CTA />
-      <HomeBlogs />
-    </Box>
+    <>
+      <Box as="main" overflow={"hidden"}>
+        <HeroSection />
+        <HomeAbout />
+        <HomeServices />
+        <Brands />
+        <OurCeo />
+        <Testimonials />
+        <CTA />
+        <HomeBlogs />
+      </Box>
+    </>
   );
 }
