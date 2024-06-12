@@ -14,12 +14,13 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import Image from "next/image";
 
 const About = () => {
   return (
     //margin X
-    <Stack margin={marginX} spacing={4} direction="column" align="center" p={5}>
-      <SimpleGrid columns={2} spacing={14} height="60vh" alignItems="center">
+    <Stack margin={marginX} spacing={4} direction="column" align="center">
+      <SimpleGrid columns={2} spacing={14} minHeight="60vh" alignItems="center">
         <div className="lets-try">
           <Heading as="h4" fontSize="md" textColor={"brand.yellow"}>
             About Badalu
@@ -105,25 +106,55 @@ const About = () => {
         >
           <GridItem
             rowSpan={2}
-            bgImage={
-              "https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/2021/12/portrait-of-happy-asian-disabled-senior-elderly-male-on-wheelchair-enjoy-stay-home-nursing-care--e1638524820916.jpg"
-            }
             objectFit={"cover"}
             borderRadius={"xl"}
-          />
+            overflow={"hidden"}
+          >
+            <Image
+              src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/2021/12/portrait-of-happy-asian-disabled-senior-elderly-male-on-wheelchair-enjoy-stay-home-nursing-care--e1638524820916.jpg"
+              width={1920}
+              height={1280}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </GridItem>
 
           <GridItem
             bgImage={
               "https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-posing-in-clinic-pgx1ontlkk2n61u1uivv20t6bn9t8z805xxpccd1qa.jpg"
             }
             borderRadius={"xl"}
-          />
-          <GridItem
-            bgImage={
-              "https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-talking-with-an-old-woman-e1638524560913-pgyr3cgr5ac0qeox03s9a5wi7f38hzhirtci86k3r6.jpg"
-            }
-            borderRadius={"xl"}
-          />
+            overflow={"hidden"}
+          >
+            <Image
+              src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-posing-in-clinic-pgx1ontlkk2n61u1uivv20t6bn9t8z805xxpccd1qa.jpg"
+              width={1920}
+              height={1280}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </GridItem>
+          <GridItem overflow={"hidden"} borderRadius={"xl"}>
+            <Image
+              src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-talking-with-an-old-woman-e1638524560913-pgyr3cgr5ac0qeox03s9a5wi7f38hzhirtci86k3r6.jpg"
+              width={1920}
+              height={1280}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </GridItem>
         </Grid>
       </SimpleGrid>
     </Stack>

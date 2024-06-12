@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar";
 import { Box, Grid, GridItem, Heading, Stack, Text } from "@chakra-ui/react";
 
 const CommonHero = ({

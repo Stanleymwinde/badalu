@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardBody,
@@ -19,7 +20,7 @@ const AboutServices = () => {
     <Stack marginX={marginX} mb={"3rem"} mt={"4rem"}>
       <Cheading h="Easy Steps To get Our Services" />
       <SimpleGrid spacing={4} columns={{ base: 1, md: 3 }}>
-        <Card>
+        <Card position="relative">
           <CardHeader>
             <FaArrowsToDot
               style={{
@@ -27,7 +28,16 @@ const AboutServices = () => {
               }}
             />
           </CardHeader>
-          <CardBody>
+          <CardBody
+            //on hover change background color via transition from bottom to top
+            _hover={{
+              bg: "brand.blue",
+
+              //color change should be a wave from bottom to top
+              color: "white",
+              transition: "color 0.5s",
+            }}
+          >
             <Heading size="md"> Customer dashboard</Heading>
             <Text color={"brand.blue"}>
               Lorem ipsum dolor sit amet consecte adipiscin elit sed eiusmod
@@ -35,7 +45,22 @@ const AboutServices = () => {
             </Text>
           </CardBody>
           <CardFooter>
-            <Button>View here</Button>
+            <Stack
+              backgroundColor="brand.blue"
+              borderRadius="full"
+              boxSize="3rem"
+              color="white"
+              position={"absolute"}
+              bottom={0}
+              justify="center"
+              align="center"
+              right="50%"
+              transform="translate(50%, 50%)"
+            >
+              <Box as="span" fontSize="1rem">
+                01
+              </Box>
+            </Stack>
           </CardFooter>
         </Card>
         <Card>

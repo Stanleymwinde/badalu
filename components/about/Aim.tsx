@@ -15,6 +15,7 @@ import {
 import { marginX } from "@/utils/constants";
 import { FaArrowsToDot } from "react-icons/fa6";
 import Image from "next/image";
+import { FaPhone } from "react-icons/fa6";
 
 const Aim = () => {
   return (
@@ -24,19 +25,14 @@ const Aim = () => {
         direction="column"
         align="center"
         backgroundColor={"#1a3854"}
-        p={5}
+        maxWidth={"100%"}
       >
-        <SimpleGrid
-          columns={2}
-          spacing={14}
-          alignItems="center"
-          marginX={marginX}
-        >
-          <Grid pb={"0.7rem"}>
-            <Heading as="h4" fontSize="md" textColor={"brand.yellow"}>
+        <SimpleGrid columns={2} spacing={14} alignItems="center">
+          <Grid pb={"0.7rem"} marginX={marginX} margin="auto">
+            <Heading as="h4" fontSize="md" textColor={"brand.yellow"} pb={5}>
               Who we Are
             </Heading>
-            <Heading as="h1" size="xl" color="brand.white">
+            <Heading as="h1" size="xl" color="brand.white" pb={5}>
               20 Years of Experience in Home Care & Private Nursing
             </Heading>
             <Text
@@ -52,22 +48,23 @@ const Aim = () => {
               countries.
             </Text>
 
-            <Flex justify="space-between" align="center">
-              <Stack align="center">
+            <Flex justify="space-between" align="center" gap={9} p={[5, 5]}>
+              <Stack>
                 <Icon as={FaArrowsToDot} boxSize={10} color="red" />
                 <Text color={"brand.yellow"}>Our Mission</Text>
-                <Text color={"brand.white"}>Badalu Home Care</Text>
+                <Text color={"brand.white"} fontSize="md">
+                  Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                  eiusmod tempor incididunt
+                </Text>
               </Stack>
-              <Box>
-                <FaArrowsToDot
-                  style={{
-                    fontSize: "2rem",
-                    color: "red",
-                  }}
-                />
+              <Stack>
+                <Icon as={FaArrowsToDot} boxSize={10} color="red" />
                 <Text color={"brand.yellow"}>Our Mission</Text>
-                <Text color={"brand.white"}>Badalu Home Care</Text>
-              </Box>
+                <Text color={"brand.white"} fontSize="md">
+                  Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                  eiusmod tempor incididunt
+                </Text>
+              </Stack>
             </Flex>
 
             <Button
@@ -81,18 +78,8 @@ const Aim = () => {
             </Button>
           </Grid>
 
-          <Grid
-            h="65vh"
-            gridTemplateRows="repeat(2, 1fr)"
-            gridTemplateColumns="auto 35%"
-            gap={4}
-          >
-            <GridItem
-              rowSpan={2}
-              objectFit={"cover"}
-              borderRadius={"xl"}
-              overflow="hidden"
-            >
+          <Grid h="75vh" maxWidth={"100vh"} maxHeight="100vh" gap={4}>
+            <GridItem objectFit={"cover"} overflow="hidden" position="relative">
               <Image
                 src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/2021/12/portrait-of-happy-asian-disabled-senior-elderly-male-on-wheelchair-enjoy-stay-home-nursing-care--e1638524820916.jpg"
                 width={1920}
@@ -104,20 +91,41 @@ const Aim = () => {
                   objectFit: "cover",
                 }}
               />
-            </GridItem>
+              <Stack
+                p={3}
+                backgroundColor={"brand.white"}
+                position="absolute"
+                width="fit-content"
+                borderRadius="xl"
+                bottom={20}
+                left={20}
+              >
+                <Text fontSize="sm" color="brand.blue">
+                  If You Need Help or Have Some Question, Consultation with Us
+                </Text>
+                <Flex direction={"row"} align={"center"}>
+                  <Box
+                    backgroundColor="brand.blue"
+                    borderRadius={"50%"}
+                    boxSize={10}
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <Icon
+                      as={FaPhone}
+                      width="fit-content"
+                      height="fit-content"
+                      color="white"
+                    ></Icon>
+                  </Box>
 
-            <GridItem
-              bgImage={
-                "https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-posing-in-clinic-pgx1ontlkk2n61u1uivv20t6bn9t8z805xxpccd1qa.jpg"
-              }
-              borderRadius={"xl"}
-            />
-            <GridItem
-              bgImage={
-                "https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-talking-with-an-old-woman-e1638524560913-pgyr3cgr5ac0qeox03s9a5wi7f38hzhirtci86k3r6.jpg"
-              }
-              borderRadius={"xl"}
-            />
+                  <Text color="grey" pl={2}>
+                    (+254)70 123 6548
+                  </Text>
+                </Flex>
+              </Stack>
+            </GridItem>
           </Grid>
         </SimpleGrid>
       </Stack>
