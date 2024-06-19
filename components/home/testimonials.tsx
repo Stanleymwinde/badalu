@@ -76,9 +76,11 @@ const TestimonialAvatar = ({
 }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
-      <Avatar src={src} alt={name} mb={2} />
+      <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
-        <Text fontWeight={600}>{name}</Text>
+        <Text fontWeight={600} color="brand.blue">
+          {name}
+        </Text>
         <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
           {title}
         </Text>
@@ -93,7 +95,9 @@ export default function Testimonials() {
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
           <Heading>Our Clients Speak</Heading>
-          <Text>We have been working with clients around the world</Text>
+          <Text color="greytext">
+            We have been working with clients around the world
+          </Text>
         </Stack>
         <Stack
           direction={{ base: "column", md: "row" }}
